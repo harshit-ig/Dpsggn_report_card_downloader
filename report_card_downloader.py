@@ -21,11 +21,6 @@ def download(url: str, dest_folder: str):
                     f.write(chunk)
                     f.flush()
                     os.fsync(f.fileno())
-    # else:  # HTTP status code 4XX/5XX
-	# 	pass # print("Download failed: status code {}\n{}".format(r.status_code, r.text))
-
-
-
 
 
 
